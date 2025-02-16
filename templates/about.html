@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website - About</title>
-</head>
+     <!-- Link to app.css stylesheet -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+</head>   
 <body>
-    <h1>Alaynia Patterson</h1>
-    <p> I am Alaynia Patterson a 22 year old student of the University of the West Indies. 
-        I am from the Faculty of Humanities and Education, pursuing a B.Ed in Information Technology.
-        I am enthusiastic about technology and enjoy helping others by sharing my knowledge on technology.</p>
+    <div class="container">
+        <!-- Image -->
+        <img src="{{ url_for('static', filename='image/my_image.png') }}" alt="My Image" />
+        <h1>Alaynia Patterson</h1>
+        <p> I am Alaynia Patterson a 22 year old student of the University of the West Indies. 
+            I am from the Faculty of Humanities and Education, pursuing a B.Ed in Information Technology.
+            I am enthusiastic about technology and enjoy helping others by sharing my knowledge on technology.</p>
+
+        <!-- Button to go back to Home Page -->
+        <a href="{{ url_for('home') }}" class="btn">Go Back Home</a>
+    </div>
 </body>
 </html>

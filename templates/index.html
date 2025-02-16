@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Set the id="home-title" for the home page header -->
+        <h1 id="home-title">My home page</h1>
+        <!-- Add a link to the About page -->
+        <a href="{{ url_for('about') }}" class="btn btn-green">Go to About Page</a>
+        <!-- Red button to 404 Page -->
+        <a href="/error-404" class="btn btn-red">Go to 404 Page</a>
+    </div>
+</body>
+</html>
